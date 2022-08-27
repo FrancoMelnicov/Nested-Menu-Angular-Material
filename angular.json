@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/wapi-exam",
+            "outputPath": "dist/wabi-exam",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "wapi-exam:build:production"
+              "browserTarget": "wabi-exam:build:production"
             },
             "development": {
-              "browserTarget": "wapi-exam:build:development"
+              "browserTarget": "wabi-exam:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "wapi-exam:build"
+            "browserTarget": "wabi-exam:build"
           }
         },
         "test": {
