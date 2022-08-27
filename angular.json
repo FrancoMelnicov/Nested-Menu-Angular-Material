@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "wapi-exam": {
+    "wabi-exam": {
       "projectType": "application",
       "schematics": {},
       "root": "",

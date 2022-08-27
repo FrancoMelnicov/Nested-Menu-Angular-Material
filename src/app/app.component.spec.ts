@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'wapi-exam'`, () => {
+  it(`should have as title 'wabi-exam'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('wapi-exam');
+    expect(app.title).toEqual('wabi-exam');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('wapi-exam app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('wabi-exam app is running!');
   });
 });

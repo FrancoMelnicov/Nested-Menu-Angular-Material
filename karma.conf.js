@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/wapi-exam'),
+      dir: require('path').join(__dirname, './coverage/wabi-exam'),
       subdir: '.',
       reporters: [
         { type: 'html' },
