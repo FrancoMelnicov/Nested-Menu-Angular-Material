@@ -1,0 +1,14 @@
+<!-- //https://stackblitz.com/edit/dynamic-nested-menus-xcvhfu?file=app%2Fmenu-item%2Fmenu-item.component.ts,app%2Fmenu-item%2Fmenu-item.component.html,app%2Fapp.component.ts -->
+
+<nav class="header">
+  <div *ngIf="menuItems$ | async as menuItems">
+    <button
+      mat-button
+      [matMenuTriggerFor]="menu.childMenu"
+    >
+      Categorias
+      <mat-icon>expand_more</mat-icon>
+    </button>
+    <app-sub-menu #menu [subItems]="menuItems"></app-sub-menu>
+  </div>
+</nav>

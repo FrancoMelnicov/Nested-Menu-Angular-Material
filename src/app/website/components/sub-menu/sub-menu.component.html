@@ -1,0 +1,20 @@
+<mat-menu #childMenu="matMenu">
+  <div *ngFor="let item of subItems">
+    <!-- Item con hijos -->
+    <button
+      *ngIf="item.children.length > 0"
+      mat-menu-item
+      [matMenuTriggerFor]="menu.childMenu"
+    >
+      {{item.name}}
+    </button>
+    <app-sub-menu #menu [subItems]="item.children"></app-sub-menu>
+    <!-- Item sin hijos -->
+    <button
+      *ngIf="item.children.length === 0"
+      mat-menu-item
+    >
+      {{item.name}}
+    </button>
+  </div>
+</mat-menu>
